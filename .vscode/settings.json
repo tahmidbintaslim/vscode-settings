@@ -1,0 +1,128 @@
+{
+  // ─── Editor Settings ────────────────────────────────────────────────────────────
+  "editor.suggest.preview": true,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "FiraCode Nerd Font, Fira Code, Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Allow Prettier to handle JavaScript & JavaScriptReact formatting on save
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ESLint auto-fix on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // ─── ESLint Settings ─────────────────────────────────────────────────────────────
+  "eslint.alwaysShowStatus": true,
+
+  // ─── Terminal Customization ──────────────────────────────────────────────────────
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code, Operator Mono",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // ─── Terminal Theme Colors ───────────────────────────────────────────────────────
+  "workbench.colorCustomizations": {
+    "terminal.background": "#1D2021",
+    "terminal.foreground": "#A89984",
+    "terminalCursor.background": "#A89984",
+    "terminalCursor.foreground": "#A89984",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBlue": "#0D6678",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#95C085",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#FB543F",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
+  },
+
+  // ─── Theme Check for Liquid Files (Shopify) ──────────────────────────────────────
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
+  "themeCheck.checkOnOpen": true,
+  "themeCheck.checkOnChange": true,
+  "themeCheck.checkOnSave": true,
+
+  // ─── Git & Explorer Behavior ─────────────────────────────────────────────────────
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+
+  // ─── General Productivity Enhancements ───────────────────────────────────────────
+  "workbench.editor.enablePreview": false,
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.colorTheme": "Abyss",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.largeFileOptimizations": false,
+  "github.copilot.chat.scopeSelection": true,
+  "files.autoSave": "onWindowChange",
+  "editor.linkedEditing": true,
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+
+  // ─── Remote SSH ──────────────────────────────────────────────────────────────────
+  "remote.SSH.remotePlatform": {
+    "35.200.208.68": "linux",
+    "35.240.176.35": "linux"
+  },
+
+  // ─── JSON Schema (if needed) ─────────────────────────────────────────────────────
+  "json.schemas": [],
+
+  // ─── Custom Syntax Styling ───────────────────────────────────────────────────────
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.sideBar.location": "left",
+  "sync.gist": "750750881b53423accf9809d27ceac7c",
+  "sync.removeExtensions": false,
+  "sync.syncExtensions": true,
+  "sync.autoUpload": true,
+  "sync.quietSync": false,
+  "sync.forceUpload": true
+}
