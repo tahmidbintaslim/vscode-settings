@@ -17,7 +17,9 @@ and was then changed for my own setup.
 
 The two extension lists do not match each other: `extensions.txt` is
 what I actually use, and `settings.json` relies on extensions from it
-(Prettier, Shopify Theme Check) that `extensions.json` does not list.
+(Prettier, Shopify Theme Check) that `extensions.json` does not list. The
+`sync.*` keys in `settings.json` are options of the third-party Settings
+Sync extension (`shan.code-settings-sync`), which is in neither list.
 
 ## How to use it
 
@@ -28,7 +30,9 @@ Copy the files you want into your VS Code user folder:
 - Windows: `%APPDATA%\Code\User\`
 
 `settings.json` and `keybindings.json` go in that folder, and
-`global.code-snippets` goes in its `snippets/` subfolder. To install the
+`global.code-snippets` goes in its `snippets/` subfolder. `extensions.json`
+has no effect there: VS Code reads it only as a workspace file, and offers
+its recommendations when this repository is the open folder. To install the
 extensions from `extensions.txt` with the `code` command line tool:
 
 ```sh
