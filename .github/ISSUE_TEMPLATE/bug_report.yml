@@ -1,0 +1,44 @@
+name: Bug report
+description: Something does not work as described.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please search existing issues first. For security problems, follow SECURITY.md instead of opening a public issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect to see?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: vscode
+    attributes:
+      label: VS Code version and OS
+      description: From Help > About.
+      placeholder: VS Code 1.106 on macOS 15
+    validations:
+      required: true
+  - type: input
+    id: setting
+    attributes:
+      label: Setting or file involved
+      placeholder: settings.json, editor.formatOnSave
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Paste console output or attach a screenshot.
